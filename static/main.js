@@ -1,7 +1,7 @@
 // constants
 batches = 100
 trainingDivergenceRate = 0.05
-inputDivergenceRate = 0.05
+inputDivergenceRate = 0.2
 size = 500
 
 var c = document.getElementById("original");
