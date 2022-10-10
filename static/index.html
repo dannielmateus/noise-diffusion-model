@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="data"></p>
+    <p style="font-size:150px;"><b>Simple Diffusion Model for Denoising</b></p>
+    <p style="font-size:70px;">
+      Made just for the sake of learning how deffusion models work, 
+      it tries to reconstruct the original image from a set of noisy versions
+      <br><b>Info:<br>Batch size: 100<br>Image resize: 100px<br>Training divergence rate: 0.05
+      <br>Input divergence rate: 0.05</b>
+    </p>
+    <button onclick="model()" style="font-size:100px;">Run model </button>
+    <p style="font-size:50px;">Original image:</p>
+    <div id="samples">
+      <img src="1.jpg" id="img1">
+    </div>
+
+    <p style="font-size:100px;"><b>Scaled image:</b></p>
+    <canvas id="original" width="500" height="500"  ></canvas>
+    <canvas id="noise1" width="500" height="500"style="display:none"></canvas>
+    <canvas id="noise2" width="500" height="500"style="display:none"></canvas>
+    <canvas id="noise3" width="500" height="500"style="display:none"></canvas>
+    <p style="font-size:100px;"><b>Generated image:</b></p>
+    <canvas id="generated" width="500" height="500"></canvas>
+    <p style="font-size:100px;"><b>Input image:</b></p>
+    <canvas id="noise4" width="500" height="500"></canvas>
+    <p style="font-size:100px;"><b>Training images:</b></p>
+    <script>
+      /*imgCount = 2
+      for (var i = 0; i < imgCount; i++){
+        img = document.createElement("img")
+        img.id = "img" + (i+1)
+        img.src = i+1 + ".jpg"
+        document.getElementById("samples").appendChild(img)
+      }*/
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
